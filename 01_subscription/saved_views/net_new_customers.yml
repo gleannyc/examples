@@ -1,6 +1,5 @@
 glean: '1.0'
 type: saved_view
-grn: sv:u6HHboOwO9uox7Z0
 model: ../models/mrr.yml
 name: Net New Customers
 data:

@@ -1,6 +1,5 @@
 glean: '1.0'
 type: saved_view
-grn: sv:bSEZya2t3oNurj80
 model: ../models/mrr.yml
 name: New and Churned Customer Revenue
 data:

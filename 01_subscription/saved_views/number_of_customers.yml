@@ -1,6 +1,5 @@
 glean: '1.0'
 type: saved_view
-grn: sv:sWlAauv4fb_avpCo
 model: ../models/mrr.yml
 name: Number of Customers
 data:

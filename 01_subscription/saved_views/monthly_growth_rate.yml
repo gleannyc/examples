@@ -1,6 +1,5 @@
 glean: '1.0'
 type: saved_view
-grn: sv:4zX0r505muT9orWJ
 model: ../models/mrr.yml
 name: Monthly growth rate
 data:

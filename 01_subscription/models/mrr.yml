@@ -2,9 +2,9 @@ glean: '1.0'
 type: model
 name: mrr
 source:
-  connectionName: snowflake-carlos
-  physicalName: mrr
-  schema: DBT_CAGUILAR
+  connectionName: bigquery-template
+  physicalName: monthly_recurring_revenue
+  schema: quickstart
 cols:
   - id: date_month
     type: datetime
