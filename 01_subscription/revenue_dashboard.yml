@@ -1,0 +1,107 @@
+glean: '1.0'
+type: dashboard
+grn: dsb:1U-ivNmLeQT3rNRw
+name: 📒 ACME co. revenue dashboard
+globalFilters: []
+sections:
+- filters:
+  - dataModel: ./models/mrr.yml
+    columnId: date_month
+    range:
+    - '2019-11-01'
+    - '2019-12-01'
+  rows:
+  - blocks:
+    - type: markdown
+      text: "> *Notes on this dashboard*\n>\n> This dashboard uses data from the [dbt\
+        \ example used in this mrr subscription post](https://www.getdbt.com/blog/modeling-subscription-revenue/).\
+        \  See [the code to generate the data on github here](https://github.com/dbt-labs/mrr-playbook).\n\
+        \n\n## Last Month "
+      width: 12
+  - blocks:
+    - type: metric
+      dataModel: ./models/mrr.yml
+      dataModelMetricId: customers
+      filters: []
+      label: active customers
+      ignoreDashboardFilters: false
+      width: 3
+    - type: metric
+      dataModel: ./models/mrr.yml
+      dataModelMetricId: arpu
+      filters:
+      - columnId: date_month
+        range:
+        - '2019-11-01'
+        - '2019-12-01'
+      label: ''
+      ignoreDashboardFilters: false
+      width: 3
+    - type: metric
+      dataModel: ./models/mrr.yml
+      dataModelMetricId: mrr
+      filters: []
+      label: MRR
+      ignoreDashboardFilters: false
+      width: 3
+    - type: metric
+      dataModel: ./models/mrr.yml
+      dataModelMetricId: mrr_change
+      filters: []
+      label: mrr change last month
+      ignoreDashboardFilters: false
+      width: 3
+    height: 2
+- filters: []
+  rows:
+  - blocks:
+    - type: markdown
+      text: '## Number of Customers '
+      width: 12
+  - blocks:
+    - type: savedView
+      savedView: sv:sWlAauv4fb_avpCo
+      legendPosition: none
+      ignoreDashboardFilters: false
+      width: 6
+    - type: savedView
+      savedView: sv:u6HHboOwO9uox7Z0
+      legendPosition: none
+      ignoreDashboardFilters: false
+      width: 6
+    height: 6
+  - blocks:
+    - type: savedView
+      savedView: sv:p223LNcqMNxFXv0w
+      legendPosition: none
+      ignoreDashboardFilters: false
+      width: 6
+    - type: empty
+      width: 6
+    height: 6
+  - blocks:
+    - type: markdown
+      text: '## Revenue'
+      width: 12
+  - blocks:
+    - type: savedView
+      savedView: sv:MMnyg_jeuQ-XKpWT
+      legendPosition: none
+      ignoreDashboardFilters: false
+      width: 6
+    - type: savedView
+      savedView: sv:4zX0r505muT9orWJ
+      legendPosition: top
+      ignoreDashboardFilters: false
+      width: 6
+    height: 6
+  - blocks:
+    - type: savedView
+      savedView: sv:bSEZya2t3oNurj80
+      legendPosition: top
+      ignoreDashboardFilters: false
+      width: 6
+    - type: empty
+      width: 6
+    height: 7
+
