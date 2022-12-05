@@ -1,0 +1,81 @@
+glean: '1.0'
+type: model
+grn: m:D2PrlDyhVDq6hgB8
+name: monthly_recurring_revenue
+source:
+  connectionName: DemoDataConnection
+  physicalName: monthly_recurring_revenue
+  schema: quickstart
+cols:
+- id: date_month
+  type: datetime
+  physicalName: date_month
+  name: date_month
+  primaryDate: true
+  aggregationOptions:
+    minGranularity: second
+    maxGranularity: year
+- id: first_active_month
+  type: datetime
+  physicalName: first_active_month
+  name: first_active_month
+  primaryDate: false
+  aggregationOptions:
+    minGranularity: second
+    maxGranularity: year
+- id: last_active_month
+  type: datetime
+  physicalName: last_active_month
+  name: last_active_month
+  primaryDate: false
+  aggregationOptions:
+    minGranularity: second
+    maxGranularity: year
+- id: change_category
+  type: attribute
+  physicalName: change_category
+  name: change_category
+- id: customer_id
+  type: attribute
+  physicalName: customer_id
+  name: customer_id
+- id: id
+  type: attribute
+  physicalName: id
+  name: id
+- id: is_active
+  type: attribute
+  physicalName: is_active
+  name: is_active
+- id: is_first_month
+  type: attribute
+  physicalName: is_first_month
+  name: is_first_month
+- id: is_last_month
+  type: attribute
+  physicalName: is_last_month
+  name: is_last_month
+- id: mrr
+  type: attribute
+  physicalName: mrr
+  name: mrr
+- id: mrr_change
+  type: attribute
+  physicalName: mrr_change
+  name: mrr_change
+- id: previous_month_is_active
+  type: attribute
+  physicalName: previous_month_is_active
+  name: previous_month_is_active
+- id: previous_month_mrr
+  type: attribute
+  physicalName: previous_month_mrr
+  name: previous_month_mrr
+- id: renewal_amount
+  type: attribute
+  physicalName: renewal_amount
+  name: renewal_amount
+- id: row_count
+  type: metric
+  name: row count
+  aggregate: row_count
