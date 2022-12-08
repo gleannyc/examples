@@ -10,15 +10,15 @@ sections:
     - '2019-11-01'
     - '2019-12-01'
   rows:
- - blocks:
-   - type: markdown
-     text: |
-       > *Notes on this dashboard*
+  - blocks:
+    - type: markdown
+      text: |
+        > *Notes on this dashboard*
 
-       This dashboard uses data from the [dbt example used in this mrr subscription post](https://www.getdbt.com/blog/modeling-subscription-revenue/).  See [the code to generate the data on github here](https://github.com/dbt-labs/mrr-playbook).
+        This dashboard uses data from the [dbt example used in this mrr subscription post](https://www.getdbt.com/blog/modeling-subscription-revenue/).  See [the code to generate the data on github here](https://github.com/dbt-labs/mrr-playbook).
 
-       \#\# Last Month
-     width: 12
+        \#\# Last Month
+      width: 12
   - blocks:
     - type: metric
       dataModel: ./models/mrr.yml
