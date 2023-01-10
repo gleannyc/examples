@@ -1,6 +1,5 @@
 glean: '1.0'
 type: model
-grn: m:5be5907f-21c9-4dad-92ab-14feda53f588
 name: mrr
 source:
   connectionName: bigquery-template
