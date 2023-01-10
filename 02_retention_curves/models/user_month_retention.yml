@@ -1,5 +1,6 @@
 glean: '1.0'
 type: model
+grn: m:ead97cce-5047-4f4c-8fb9-21bfd1bc8f70
 name: 02 Retention
 source:
   connectionName: bigquery-template
