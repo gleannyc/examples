@@ -39,89 +39,69 @@ cols:
   - id: created_date
     type: datetime
     physicalName: created_date
-    name: created_date
+    name: Create Date
     primaryDate: true
     aggregationOptions:
-      minGranularity: second
+      minGranularity: day
       maxGranularity: year
   - id: closed_date
     type: datetime
     physicalName: closed_date
-    name: closed_date
+    name: Close Date
     primaryDate: false
     aggregationOptions:
-      minGranularity: second
+      minGranularity: day
       maxGranularity: year
-  - id: resolution_action_updated_date
-    type: datetime
-    physicalName: resolution_action_updated_date
-    name: resolution_action_updated_date
-    primaryDate: false
-    aggregationOptions:
-      minGranularity: second
-      maxGranularity: year
-  - id: is_suspicious_timestamp
-    type: attribute
-    physicalName: is_suspicious_timestamp
-    name: is_suspicious_timestamp
-  - id: day_of_week
-    type: attribute
-    physicalName: day_of_week
-    name: day_of_week
-  - id: created_day_of_week_numeric
-    type: attribute
-    physicalName: created_day_of_week_numeric
-    name: created_day_of_week_numeric
   - id: agency_name
     type: attribute
     physicalName: agency_name
-    name: agency_name
-  - id: x_coordinate
+    name: Agency
+    description: city agency
+  - id: is_suspicious_timestamp
     type: attribute
-    physicalName: x_coordinate
-    name: x_coordinate
-  - id: bbl
-    type: attribute
-    physicalName: bbl
-    name: bbl
-  - id: latitude
-    type: attribute
-    physicalName: latitude
-    name: latitude
-  - id: created_hour
-    type: attribute
-    physicalName: created_hour
-    name: created_hour
-  - id: longitude
-    type: attribute
-    physicalName: longitude
-    name: longitude
-  - id: created_day_of_month_numeric
-    type: attribute
-    physicalName: created_day_of_month_numeric
-    name: created_day_of_month_numeric
-  - id: created_month_numeric
-    type: attribute
-    physicalName: created_month_numeric
-    name: created_month_numeric
-  - id: created_year
-    type: attribute
-    physicalName: created_year
-    name: created year
+    physicalName: is_suspicious_timestamp
+    name: Is Suspicious Timestamp
+    description: timestamps with too many zeros
   - id: incident_zip
     type: attribute
     physicalName: incident_zip
-    name: incident_zip
+    name: Zipcode
   - id: close_time_days
     type: attribute
     physicalName: close_time_days
-    name: close_time_days
+    name: Days to Close
+  - id: day_of_week
+    type: attribute
+    physicalName: day_of_week
+    name: Day of Week
+  - id: created_hour
+    type: attribute
+    physicalName: created_hour
+    name: Created Hour
+  - id: created_year
+    type: attribute
+    physicalName: created_year
+    name: Created Year
+  - id: created_month_numeric
+    type: attribute
+    physicalName: created_month_numeric
+    name: Created Month
+  - id: created_day_of_month_numeric
+    type: attribute
+    physicalName: created_day_of_month_numeric
+    name: Created Day of Month
+  - id: created_day_of_week_numeric
+    type: attribute
+    physicalName: created_day_of_week_numeric
+    name: Created Day of Week
   - id: row_count
     type: metric
     name: call volume
+    description: count of calls to 311
     aggregate: row_count
   - id: avg_close_time_days
     type: metric
     name: avg days to close
+    description: average number of days to close the complaint
     aggregate: avg
     physicalName: close_time_days
