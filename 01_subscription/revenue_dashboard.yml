@@ -17,7 +17,7 @@ sections:
 
         This dashboard uses data from the [dbt example used in this mrr subscription post](https://www.getdbt.com/blog/modeling-subscription-revenue/).  See [the code to generate the data on github here](https://github.com/dbt-labs/mrr-playbook).
 
-        \#\# Last Month
+        ## Last Month
       width: 12
   - blocks:
     - type: metric
