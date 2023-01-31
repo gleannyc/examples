@@ -34,5 +34,4 @@ visualization:
   stack: stack
   showAxisLabels: true
   legend: top
-  #colorPalette: palette:2UjMV10WtWQqs9er
-
+  colorPalette: ../red_green_diverging_palette.yml
