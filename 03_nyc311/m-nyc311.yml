@@ -57,6 +57,18 @@ cols:
     physicalName: agency_name
     name: Agency
     description: city agency
+  - id: complaint_type
+    type: attribute
+    physicalName: complaint_type
+    name: complaint_type
+  - id: location_type
+    type: attribute
+    physicalName: location_type
+    name: location_type
+  - id: status
+    type: attribute
+    physicalName: status
+    name: status
   - id: is_suspicious_timestamp
     type: attribute
     physicalName: is_suspicious_timestamp
