@@ -4,7 +4,7 @@
 
 ## Usage
 To get started with DataOps, you'll need:
-1. A Glean Demo project (sign up on the [Glean homepage](https://glean.io) and use the "Import Demo Project" option in the top-left menu)
+1. A Glean Demo project (sign up on the [Glean homepage](https://glean.io) and use the "Import Demo Project" option in the top-left menu after logging in)
 3. A Glean [Access Key](https://docs.glean.io/docs/data-ops/Using-the-Glean-CLI/#1-create-an-access-key) for your Demo Project in your local environment
 
 To install the Glean CLI:
