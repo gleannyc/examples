@@ -1,6 +1,6 @@
 # Glean project examples
 
-[Glean](https://glean.io) supports defining models, views, and dashboards as code, which can then be deployed to your project using [DataOps](https://docs.glean.io/docs/data-ops/). This repository contains some examples to help you get started. You can see an explore a live demo of these resources at: https://demo.glean.io
+[Glean](https://glean.io) supports defining models, views, and dashboards as code, which can then be deployed to your project using [DataOps](https://docs.glean.io/docs/data-ops/). This repository contains some examples to help you get started. You can see and explore a live demo of these resources at: https://demo.glean.io
 
 ## Usage
 
