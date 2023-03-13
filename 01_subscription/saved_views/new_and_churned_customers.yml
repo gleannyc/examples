@@ -2,6 +2,7 @@ glean: '1.0'
 type: saved_view
 model: ../models/mrr.yml
 name: New and Churned Customers
+description: This is a saved view that you can learn about churn.
 data:
   x:
     columnId: date_month
