@@ -1,6 +1,8 @@
-glean: '1.0'
+glean: "1.0"
 type: model
+grn: m:b9eb3293-7875-3d23-b5b6-49a3cfaf4faf
 name: 02 Retention
+description: Retention data from a sample of stories and comments on Hacker News
 source:
   connectionName: bigquery-template
   sql: |+
@@ -40,16 +42,18 @@ cols:
   - id: month
     type: datetime
     physicalName: month
-    name: time since signup
+    name: Activity month
     primaryDate: true
+    description: The analyzed month.
     aggregationOptions:
       minGranularity: month
       maxGranularity: month
   - id: cohort
     type: datetime
     physicalName: cohort_month
-    name: Cohort
+    name: Signup month (date)
     primaryDate: false
+    description: The month that the analyzed users signed up.
     aggregationOptions:
       minGranularity: second
       maxGranularity: year
@@ -57,25 +61,34 @@ cols:
     type: attribute
     physicalName: user_id
     name: user_id
+    description: Unique string representing a specific user.
   - id: month_number
     type: attribute
     physicalName: month_number
-    name: months since signup
+    name: Months since signup
+    description: Number of months since the analyzed users signed up.
+    aggregationOptions:
+      defaultBinWidth: 6
+      binsEnabled: false
   - id: cohort_month_str
     type: attribute
     physicalName: cohort_month_str
-    name: signup month
+    name: Signup month
+    description: String version of the signup month
   - id: signup_year
     type: attribute
     physicalName: cohort_year_str
-    name: signup year
+    name: Signup year
+    description: String version of the signup year
   - id: row_count
     type: metric
-    name: __analytic rows
+    name: Month count
+    description: Number of months
     aggregate: row_count
   - id: avg_active
     type: metric
     name: Active Retention
+    description: Average number of monthly active users.
     formattingOptions:
       fixedDecimals: 1
       formatAsPercent: true
@@ -84,6 +97,7 @@ cols:
   - id: avg_unbounded_active
     type: metric
     name: Unbounded Retention
+    description: Average number of users that were active in the analyzed month or any future month.
     formattingOptions:
       fixedDecimals: 1
       formatAsPercent: true
@@ -92,4 +106,5 @@ cols:
   - id: active_users
     type: metric
     name: Active Users
+    description: Number of unique active users in the analyzed month.
     sql: count(distinct if(active=1, user_id, null))
