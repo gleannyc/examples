@@ -21,7 +21,7 @@ cols:
     physicalName: first_active_month
     name: First active month
     primaryDate: false
-    description: The first month that this customer was active.
+    description: The first month that this customer was active
     aggregationOptions:
       minGranularity: second
       maxGranularity: year
@@ -30,7 +30,7 @@ cols:
     physicalName: last_active_month
     name: Last active month
     primaryDate: false
-    description: The last month that this customer was active.
+    description: The last month that this customer was active
     aggregationOptions:
       minGranularity: second
       maxGranularity: year
@@ -58,7 +58,7 @@ cols:
     type: attribute
     physicalName: renewal_amount
     name: Renewal amount
-    description: The amount invoiced to this customer for renewal this month.
+    description: The amount invoiced to this customer for renewal this month
     aggregationOptions:
       defaultBinWidth: 5
       binsEnabled: false
