@@ -1,6 +1,6 @@
 glean: "1.0"
 type: model
-name: 02 Retention
+name: Retention
 description: Retention data from a sample of stories and comments on Hacker News
 source:
   connectionName: bigquery-template
@@ -50,7 +50,7 @@ cols:
   - id: cohort
     type: datetime
     physicalName: cohort_month
-    name: Cohort
+    name: Signup cohort
     primaryDate: false
     description: The date that the analyzed users signed up.
     aggregationOptions:
@@ -71,8 +71,8 @@ cols:
       binsEnabled: false
   - id: row_count
     type: metric
-    name: Month count
-    description: Number of months
+    name: Row count
+    description: Number of rows, where each row is a (month, user) pair.
     aggregate: row_count
   - id: active_retention
     type: metric
