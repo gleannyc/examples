@@ -73,7 +73,7 @@ cols:
     physicalName: renewal_amount
   - id: customers
     type: metric
-    name: customers
+    name: Customers
     aggregate: count_distinct
     physicalName: customer_id
   - id: arpu
