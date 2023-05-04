@@ -47,7 +47,7 @@ cols:
     name: customer_id
   - id: transactions
     type: metric
-    name: Transactions
+    name: Number of transactions
     aggregate: row_count
   - id: mrr_change
     type: metric
