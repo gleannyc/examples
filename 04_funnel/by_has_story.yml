@@ -1,6 +1,6 @@
 glean: "1.0"
 type: saved_view
-model: ./model.yml
+model: ./04_funnel/model.yml
 name: Funnels by "Has Story"
 data:
   x:

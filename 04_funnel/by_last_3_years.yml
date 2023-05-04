@@ -1,6 +1,6 @@
 glean: "1.0"
 type: saved_view
-model: ./model.yml
+model: ./04_funnel/model.yml
 name: Funnels by Last 3 Years
 data:
   x:
@@ -23,7 +23,6 @@ visualization:
   showAxisLabels: true
   legend: top
   showLegendTitle: false
-  colorPalette: palette:9cf277e3-aea8-32c5-a237-8abb62b0fca6
   tableCellFormatting:
     - color: none
       showPercentage: true

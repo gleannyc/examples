@@ -12,7 +12,7 @@ sections:
             width: 12
       - blocks:
           - type: savedView
-            savedView: ./overview.yml
+            savedView: ./04_funnel/overview.yml
             legendPosition: top
             ignoreDashboardFilters: false
             width: 12
@@ -28,7 +28,7 @@ sections:
               Dropoff seems particularly big between the second and third comment.
             width: 2
           - type: savedView
-            savedView: ./by_last_3_years.yml
+            savedView: ./04_funnel/by_last_3_years.yml
             legendPosition: top
             ignoreDashboardFilters: false
             width: 10
@@ -40,7 +40,7 @@ sections:
               who have not.
             width: 2
           - type: savedView
-            savedView: ./by_has_story.yml
+            savedView: ./04_funnel/by_has_story.yml
             legendPosition: top
             ignoreDashboardFilters: false
             width: 10
@@ -52,7 +52,7 @@ sections:
               funnel performance is similar across the two.
             width: 2
           - type: savedView
-            savedView: ./by_username.yml
+            savedView: ./04_funnel/by_username.yml
             legendPosition: top
             ignoreDashboardFilters: false
             width: 10
