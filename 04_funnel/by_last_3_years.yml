@@ -1,21 +1,21 @@
 glean: "1.0"
 type: saved_view
-model: ./04_funnel/model.yml
+model: ./model.yml
 name: Funnels by Last 3 Years
 data:
   x:
-    columnId: funnel_stage
+    columnId: stage_name
   y:
     columnId: user_count
   breakout:
-    columnId: join_year
+    columnId: cohort_year
     metricId: user_count
     sort: desc
     limit: 3
     showOther: false
   filters: []
   sort:
-    - columnId: join_year
+    - columnId: cohort_year
       order: desc
   limit: 10000
 visualization:

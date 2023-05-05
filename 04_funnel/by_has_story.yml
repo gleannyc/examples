@@ -1,14 +1,14 @@
 glean: "1.0"
 type: saved_view
-model: ./04_funnel/model.yml
+model: ./model.yml
 name: Funnels by "Has Story"
 data:
   x:
-    columnId: funnel_stage
+    columnId: stage_name
   y:
     columnId: user_count
   breakout:
-    columnId: user_has_posted_story
+    columnId: has_story
     groups:
       - key: No Story
         color: "#003F5C"
