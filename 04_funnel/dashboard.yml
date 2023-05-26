@@ -16,7 +16,7 @@ sections:
             legendPosition: top
             ignoreDashboardFilters: false
             width: 12
-        height: 4
+        height: 5
       - blocks:
           - type: markdown
             text: "##  Drill Downs \n ---"
@@ -32,7 +32,7 @@ sections:
             legendPosition: top
             ignoreDashboardFilters: false
             width: 10
-        height: 4
+        height: 5
       - blocks:
           - type: markdown
             text:
@@ -44,7 +44,7 @@ sections:
             legendPosition: top
             ignoreDashboardFilters: false
             width: 10
-        height: 4
+        height: 5
       - blocks:
           - type: markdown
             text:
@@ -56,4 +56,4 @@ sections:
             legendPosition: top
             ignoreDashboardFilters: false
             width: 10
-        height: 4
+        height: 5
