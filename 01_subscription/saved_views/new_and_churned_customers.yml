@@ -25,6 +25,5 @@ data:
 visualization:
   chartType: bar
   showOther: true
-  stack: stack
   showAxisLabels: true
 

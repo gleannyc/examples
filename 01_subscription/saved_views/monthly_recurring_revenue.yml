@@ -16,5 +16,4 @@ data:
 visualization:
   chartType: line
   showOther: true
-  stack: unstack
 
