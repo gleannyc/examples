@@ -17,6 +17,5 @@ data:
 visualization:
   chartType: bar
   showOther: true
-  stack: unstack
   showAxisLabels: true
 
