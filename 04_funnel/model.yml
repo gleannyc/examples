@@ -35,6 +35,7 @@ source:
       stage_name,
       has_story,
       IF(comment_count >= required_min_count, 1, 0) as in_stage,
+      if(MOD(cohort_year,2)=1, 'https://www.glean.io', 'https://docs.glean.io') as url
     from
       user, stage
     where cohort_year>extract(YEAR from current_date()) - 5
@@ -74,13 +75,17 @@ cols:
     physicalName: has_story
     name: User Has Posted Story
     description: Whether a user has posted a story
+  - id: url
+    type: attribute
+    physicalName: url
+    name: url
   - id: user_count
     type: metric
     name: User Count
-    sql: COUNT(DISTINCT IF(in_stage = 1, username, null))
     description: Count of users
+    sql: COUNT(DISTINCT IF(in_stage = 1, username, null))
   - id: check_count
     type: metric
     name: Check Count
-    aggregate: row_count
     description: Only for debugging. The number of (user, funnel stage) combinations
+    aggregate: row_count
