@@ -1,0 +1,14 @@
+hbVersion: '1.0'
+name: Second Dashboard
+description: ''
+type: dashboard
+globalFilters: []
+sections:
+- filters: []
+  rows:
+  - blocks:
+    - type: linkedMetric
+      ignoreDashboardFilters: false
+      width: 12
+      metric: ./check_count_metric.yml
+    height: 4

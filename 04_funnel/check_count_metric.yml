@@ -1,7 +1,7 @@
 hbVersion: '1.0'
 type: metric
 grn: mtr:NAIxm6RIDBxpTg-9
-name: Check Count
+name: Check Count v2
 config:
   metricType: simple
   dataModel: ./model.yml
