@@ -1,0 +1,13 @@
+hbVersion: '1.0'
+type: metric
+name: MRR change v2
+config:
+  metricType: timeseries
+  dataModel: m:f5aafa26-a85c-37b6-ad36-e5a8f575bf7a
+  measureId: mrr_change
+  dimensionId: date_month
+  granularity: month
+  displayOptions:
+    sparkline: true
+    numPeriodsToDisplay: 48
+    displayLastPartialPeriod: false
