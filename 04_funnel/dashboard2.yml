@@ -10,5 +10,5 @@ sections:
     - type: linkedMetric
       ignoreDashboardFilters: false
       width: 12
-      metric: ./check_count_metric.yml
+      metric: mtr:NAIxm6RIDBxpTg-9
     height: 4
