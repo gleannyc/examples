@@ -4,5 +4,5 @@ grn: mtr:NAIxm6RIDBxpTg-9
 name: Check Count
 config:
   metricType: simple
-  dataModel: m:3cf07850-3fb8-3707-a416-1cc590c8ca16
+  dataModel: ./model.yml
   measureId: check_count
